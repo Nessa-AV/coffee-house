@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Menu - Coffee House</title>
+  <link rel="icon" href ="355d997e558a5ec2dbd3472959608fd2 1.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img class = "icon" src="355d997e558a5ec2dbd3472959608fd2 1.svg" alt="icon">
+          <span>Coffee House</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Coffee Menu</a></li>
+          <li><a href="food.html">Food Menu</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Coffee Menu Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header animate-fade-in">
+        <h1>Coffee & Drinks</h1>
+        <p>Handcrafted with passion and precision</p>
+        <a href="food.html" class="btn-secondary">View Food Menu</a>
+      </div>
+      
+      <div class="menu-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="espresso">Espresso</button>
+          <button class="tab-btn" data-tab="iced">Iced Drinks</button>
+          <button class="tab-btn" data-tab="blended">Blended Drinks</button>
+          <button class="tab-btn" data-tab="tea">Tea</button>
+          <button class="tab-btn" data-tab="non-coffee">Non-Coffee</button>
+        </div>
+        
+        <div class="tab-content">
+          <!-- Espresso Tab -->
+          <div class="tab-pane active" id="espresso">
+            <div class="menu-grid">
+              <div class="menu-item animate-pop">
+                <h3>Espresso</h3>
+                <p>The original strong shot</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">220</span>
+                  <span class="size">Large</span>
+                  <span class="amount">240</span>
+                </div>
+              </div>
+              <div class="menu-item animate-pop" style="animation-delay: 0.1s;">
+                <h3>Americano</h3>
+                <p>Espresso with hot water</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">240</span>
+                  <span class="size">Large</span>
+                  <span class="amount">290</span>
+                </div>
+              </div>
+              <div class="menu-item animate-pop" style="animation-delay: 0.2s;">
+                <h3>Cappuccino</h3>
+                <p>Espresso with steamed milk foam</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">260</span>
+                  <span class="size">Large</span>
+                  <span class="amount">310</span>
+                </div>
+              </div>
+              <div class="menu-item animate-pop" style="animation-delay: 0.3s;">
+                <h3>Café Latte</h3>
+                <p>Smooth espresso with steamed milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">230</span>
+                  <span class="size">Large</span>
+                  <span class="amount">310</span>
+                </div>
+              </div>
+              <div class="menu-item animate-pop" style="animation-delay: 0.4s;">
+                <h3>Macchiato</h3>
+                <p>Espresso "stained" with milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">220</span>
+                  <span class="size">Large</span>
+                  <span class="amount">260</span>
+                </div>
+              </div>
+              <div class="menu-item animate-pop" style="animation-delay: 0.5s;">
+                <h3>Mocha</h3>
+                <p>Espresso with chocolate and milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">280</span>
+                  <span class="size">Large</span>
+                  <span class="amount">410</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Iced Drinks Tab -->
+          <div class="tab-pane" id="iced">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h3>Iced Americano</h3>
+                <p>Chilled espresso with water</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">280</span>
+                  <span class="size">Large</span>
+                  <span class="amount">330</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Iced Cappuccino</h3>
+                <p>Cold espresso with frothed milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">270</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Iced Latte</h3>
+                <p>Espresso with cold milk over ice</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">280</span>
+                  <span class="size">Large</span>
+                  <span class="amount">350</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Iced Mocha Latte</h3>
+                <p>Chocolate, espresso, and cold milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">320</span>
+                  <span class="size">Large</span>
+                  <span class="amount">350</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Iced Vanilla Latte</h3>
+                <p>Sweet vanilla with espresso and milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">290</span>
+                  <span class="size">Large</span>
+                  <span class="amount">350</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Iced Caramel Latte</h3>
+                <p>Rich caramel with cold espresso</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">290</span>
+                  <span class="size">Large</span>
+                  <span class="amount">350</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Blended Drinks Tab -->
+          <div class="tab-pane" id="blended">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h3>Pure Chocolate</h3>
+                <p>Rich chocolate blended with ice</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">380</span>
+                  <span class="size">Large</span>
+                  <span class="amount">470</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Pure Vanilla</h3>
+                <p>Creamy vanilla ice blended</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">380</span>
+                  <span class="size">Large</span>
+                  <span class="amount">410</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Pure Caramel</h3>
+                <p>Buttery caramel blended drink</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">380</span>
+                  <span class="size">Large</span>
+                  <span class="amount">480</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Matcha Ice Blended</h3>
+                <p>Japanese green tea blended with ice</p>
+                <div class="price">
+                  <span class="size">Regular</span>
+                  <span class="amount">400</span>
+                  <span class="size">Large</span>
+                  <span class="amount">480</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Black Forest</h3>
+                <p>Chocolate and cherry blend</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">430</span>
+                  <span class="size">Large</span>
+                  <span class="amount">450</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Extreme</h3>
+                <p>Double chocolate and espresso blend</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">400</span>
+                  <span class="size">Large</span>
+                  <span class="amount">480</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tea Tab -->
+          <div class="tab-pane" id="tea">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h3>English Breakfast</h3>
+                <p>Classic black tea blend</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">250</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Earl Grey</h3>
+                <p>Black tea with bergamot</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">250</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Chai</h3>
+                <p>Spiced Indian tea with milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">270</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Moroccan Mint</h3>
+                <p>Green tea with fresh mint</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">250</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Apricot Ceylon</h3>
+                <p>Black tea with apricot notes</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">250</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Tropical Passion</h3>
+                <p>Fruity herbal infusion</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">250</span>
+                  <span class="size">Large</span>
+                  <span class="amount">320</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Non-Coffee Tab -->
+          <div class="tab-pane" id="non-coffee">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <h3>Hot Chocolate</h3>
+                <p>Rich, creamy chocolate drink</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">240</span>
+                  <span class="size">Large</span>
+                  <span class="amount">330</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Hot Vanilla</h3>
+                <p>Warm, sweet vanilla milk</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">240</span>
+                  <span class="size">Large</span>
+                  <span class="amount">340</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Babyccino</h3>
+                <p>Frothed milk for kids</p>
+                <div class="price">
+                  <span class="size">Regular</span>
+                  <span class="amount">150</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Vanilla/Chocolate Milk</h3>
+                <p>Kid-friendly favorites</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">200</span>
+                  <span class="size">Large</span>
+                  <span class="amount">250</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Today's Brew</h3>
+                <p>Freshly brewed house special</p>
+                <div class="price">
+                  <span class="size">Small</span>
+                  <span class="amount">230</span>
+                  <span class="size">Large</span>
+                  <span class="amount">280</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <h3>Smooth & Creamy</h3>
+                <p>Handcrafted just for you!</p>
+                <div class="price">
+                  <span class="size">Regular</span>
+                  <span class="amount">300</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="customize-note animate-fade-in">
+        <h3><i class="fas fa-mug-hot"></i> Customize It!</h3>
+        <p>Add extra espresso shot for 110 | Caramel Sauce 50 | Chocolate Sauce 50 | Whipped Cream 80 | Honey Stick 50</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee House</span>
+          </a>
+          <p>Brewing happiness, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Coffee Menu</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Mon-Fri:</span> 7am - 9pm</li>
+            <li><span>Sat-Sun:</span> 8am - 10pm</li>
+            <li><span>Holidays:</span> 9am - 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Coffee House. All rights reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

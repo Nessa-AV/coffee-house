@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House - Artisanal Coffee & Bakery</title>
+  <link rel="icon" href ="355d997e558a5ec2dbd3472959608fd2 1.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img class = "icon" src="355d997e558a5ec2dbd3472959608fd2 1.svg" alt="icon">
+          <span>Coffee House</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Coffee Menu</a></li>
+          <li><a href="food.html">Food Menu</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content animate-slide-up">
+      <h1 class="animate-pop">Experience the Perfect Brew</h1>
+      <p class="animate-fade-in">Artisanal coffee, freshly baked pastries, and a cozy atmosphere to relax or work.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-primary animate-slide-left">View Our Menu</a>
+        <a href="location.html" class="btn-secondary animate-slide-right">Visit Us</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+
+
+
+<section class="drinks-carousel-section">
+  <div class="container">
+    <!-- Верхний пунктирный заголовок -->
+    <div class="section-header-line">
+      <div class="dotted-line"></div>
+      <h2 class="section-title dotted-title">Coffee & Menu</h2>
+      <div class="dotted-line"></div>
+    </div>
+    
+    <!-- Карусель напитков -->
+    <div class="drinks-carousel-wrapper">
+      <div class="drinks-carousel" id="drinksCarousel">
+        <div class="drinks-track" id="drinksTrack">
+          <!-- Карточки напитков -->
+          <div class="drink-card" data-tab="espresso" data-item="espresso">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/736x/56/87/51/568751510a299d1b4867d10e9db794de.jpg" alt="Espresso">
+            </div>
+            <div class="drink-info">
+              <h3>Espresso</h3>
+              <p>The original strong shot</p>
+              <div class="drink-price">
+                <span class="price">220</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('espresso', 'espresso')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="espresso" data-item="cappuccino">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/736x/c1/b4/bc/c1b4bc85d92d3342967ba14a93c57935.jpg" alt="Cappuccino">
+            </div>
+            <div class="drink-info">
+              <h3>Cappuccino</h3>
+              <p>Cap with steamed milk foam</p>
+              <div class="drink-price">
+                <span class="price">260</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('espresso', 'cappuccino')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="iced" data-item="iced-latte">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/1200x/1b/33/ce/1b33ce30267c9ea5851f391e32f75926.jpg" alt="Iced Latte">
+            </div>
+            <div class="drink-info">
+              <h3>Iced Latte</h3>
+              <p>Espresso with cold milk over ice</p>
+              <div class="drink-price">
+                <span class="price">280</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('iced', 'iced-latte')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="iced" data-item="iced-mocha">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/1200x/30/bb/db/30bbdbd36d5ecef0f800b90572dcdef4.jpg" alt="Iced Mocha">
+            </div>
+            <div class="drink-info">
+              <h3>Iced Mocha</h3>
+              <p>Chocolate, espresso and cold milk</p>
+              <div class="drink-price">
+                <span class="price">320</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('iced', 'iced-mocha')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="blended" data-item="pure-chocolate">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/736x/76/99/d5/7699d5f61bb537fe25f70d773dd661d7.jpg" alt="Pure Chocolate">
+            </div>
+            <div class="drink-info">
+              <h3>Pure Chocolate</h3>
+              <p>Rich chocolate blended with ice</p>
+              <div class="drink-price">
+                <span class="price">380</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('blended', 'pure-chocolate')">
+                <i class="fas fa-blender"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="tea" data-item="chai">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/1200x/73/e7/96/73e796b094781263c849bde36efcdc1d.jpg" alt="Chai Tea">
+            </div>
+            <div class="drink-info">
+              <h3>Chai Tea</h3>
+              <p>Spiced Indian tea with milk</p>
+              <div class="drink-price">
+                <span class="price">270</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('tea', 'chai')">
+                <i class="fas fa-mug-hot"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="espresso" data-item="americano">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/736x/03/6c/07/036c074c63bc49b17c5643c3e8f1f818.jpg" alt="Americano">
+            </div>
+            <div class="drink-info">
+              <h3>Americano</h3>
+              <p>Espresso with hot water</p>
+              <div class="drink-price">
+                <span class="price">240</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('espresso', 'americano')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+          <div class="drink-card" data-tab="espresso" data-item="latte">
+            <div class="drink-image">
+              <img src="https://i.pinimg.com/1200x/94/65/97/9465971ea8256aa8208885fbc0513de5.jpg" alt="Hot Vanilla">
+            </div>
+            <div class="drink-info">
+              <h3>Hot Vanilla</h3>
+              <p>Warm, sweet vanilla milk</p>
+              <div class="drink-price">
+                <span class="price">240</span>
+                <span class="currency"></span>
+              </div>
+              <button class="order-btn" onclick="goToDrink('espresso', 'latte')">
+                <i class="fas fa-coffee"></i> Order Now
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Индикатор прокрутки -->
+    <div class="scroll-indicator">
+      <div class="scroll-icon">
+        <i class="fas fa-chevron-left"></i>
+        <span></span>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="scroll-bar">
+        <div class="scroll-thumb" id="scrollThumb"></div>
+      </div>
+    </div>
+    
+    <div class="view-all-container">
+      <a href="menu.html" class="view-all-btn">
+        <span>View Full Menu</span>
+        <i class="fas fa-book-open"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header animate-fade-in">
+        <h2>Our Story</h2>
+        <p>Brewing perfection since 2010</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text animate-slide-left">
+          <h3>From Bean to Cup</h3>
+          <p>At Coffee House, we source the finest beans from sustainable farms around the world. Our expert roasters carefully craft each batch to highlight the unique flavors of every origin.</p>
+          <p>We believe coffee is more than just a drink—it's an experience, a ritual, and a way to connect with others.</p>
+          <a href="location.html" class="btn-primary">Visit Our Roastery</a>
+        </div>
+        <div class="about-image animate-slide-right">
+          <img src="https://i.pinimg.com/1200x/38/c5/bb/38c5bb3a9650da78bf7bfb86a0d73d04.jpg" alt="Coffee beans and brewing equipment">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee House</span>
+          </a>
+          <p>Brewing happiness, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Coffee Menu</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Mon-Fri:</span> 7am - 9pm</li>
+            <li><span>Sat-Sun:</span> 8am - 10pm</li>
+            <li><span>Holidays:</span> 9am - 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Coffee House. All rights reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
