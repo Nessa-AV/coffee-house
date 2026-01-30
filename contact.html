@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Coffee House</title>
+  <link rel="icon" href ="355d997e558a5ec2dbd3472959608fd2 1.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img class = "icon" src="355d997e558a5ec2dbd3472959608fd2 1.svg" alt="icon">
+          <span>Coffee House</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Coffee Menu</a></li>
+          <li><a href="food.html">Food Menu</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Main Section -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Our Location</h3>
+            <p>123 Coffee Street, Brew District</p>
+            <p>City 10001</p>
+            <a href="location.html" class="info-link">
+              View on Map <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Opening Hours</h3>
+            <div class="hours-list">
+              <div class="hour-item">
+                <span>Monday - Friday</span>
+                <span>7:00 AM - 9:00 PM</span>
+              </div>
+              <div class="hour-item">
+                <span>Saturday - Sunday</span>
+                <span>8:00 AM - 10:00 PM</span>
+              </div>
+              <div class="hour-item">
+                <span>Holidays</span>
+                <span>9:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Contact Details</h3>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@coffeehouse.com</p>
+            <p><strong>For Catering:</strong> catering@coffeehouse.com</p>
+            <div class="emergency-contact">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>For urgent matters: (123) 456-7891</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon tiktok">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="social-icon youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+            <p class="social-text">Follow us for daily updates!</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i> Full Name *
+              </label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i> Email Address *
+              </label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+              <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone"></i> Phone Number
+              </label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              <div class="error-message" id="phoneError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i> Subject *
+              </label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="catering">Catering Service</option>
+                <option value="feedback">Feedback & Suggestions</option>
+                <option value="complaint">Complaint</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="error-message" id="subjectError"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment"></i> Your Message *
+              </label>
+              <textarea id="message" name="message" rows="5" required 
+                        placeholder="Type your message here..."></textarea>
+              <div class="char-count">
+                <span id="charCount">0</span> / 500 characters
+              </div>
+              <div class="error-message" id="messageError"></div>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+
+            <button type="submit" class="btn-primary submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find quick answers to common questions</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you take reservations?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we accept reservations for parties of 6 or more. For smaller groups, we operate on a first-come, first-served basis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you offer catering services?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! We provide full catering services for events, meetings, and special occasions. Contact us at least 48 hours in advance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are you hiring?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We're always looking for passionate coffee lovers! Send your resume to careers@coffeehouse.com.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you have WiFi and power outlets?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we offer free high-speed WiFi and plenty of power outlets for our customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee House</span>
+          </a>
+          <p>Brewing happiness, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Coffee Menu</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Mon-Fri:</span> 7am - 9pm</li>
+            <li><span>Sat-Sun:</span> 8am - 10pm</li>
+            <li><span>Holidays:</span> 9am - 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Coffee House. All rights reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script>
+    // Contact page specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // FAQ Accordion
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+          // Close other items
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+              otherItem.classList.remove('active');
+            }
+          });
+          
+          // Toggle current item
+          item.classList.toggle('active');
+        });
+      });
+      
+      // Character counter
+      const messageInput = document.getElementById('message');
+      const charCount = document.getElementById('charCount');
+      
+      if (messageInput && charCount) {
+        messageInput.addEventListener('input', function() {
+          const count = this.value.length;
+          charCount.textContent = count;
+          
+          // Change color when approaching limit
+          if (count > 450) {
+            charCount.style.color = '#d32f2f';
+          } else if (count > 400) {
+            charCount.style.color = '#ff9800';
+          } else {
+            charCount.style.color = 'var(--text-light)';
+          }
+        });
+        
+        // Initial count
+        charCount.textContent = messageInput.value.length;
+      }
+      
+      // Form submission
+      const contactForm = document.getElementById('contactForm');
+      const formSuccess = document.getElementById('formSuccess');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Simple validation
+          let isValid = true;
+          const requiredFields = ['name', 'email', 'subject', 'message'];
+          
+          requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            const errorElement = document.getElementById(fieldId + 'Error');
+            
+            if (field && !field.value.trim()) {
+              errorElement.textContent = 'This field is required';
+              field.style.borderColor = '#d32f2f';
+              isValid = false;
+            } else {
+              errorElement.textContent = '';
+              field.style.borderColor = 'var(--accent-color)';
+            }
+          });
+          
+          // Email validation
+          const emailField = document.getElementById('email');
+          const emailError = document.getElementById('emailError');
+          if (emailField && emailField.value.trim()) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailField.value.trim())) {
+              emailError.textContent = 'Please enter a valid email address';
+              emailField.style.borderColor = '#d32f2f';
+              isValid = false;
+            }
+          }
+          
+          if (isValid) {
+            // Show success message
+            formSuccess.style.display = 'block';
+            contactForm.reset();
+            
+            // Reset character count
+            if (charCount) charCount.textContent = '0';
+            
+            // Scroll to success message
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              formSuccess.style.display = 'none';
+            }, 5000);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu - Coffee House</title>
+  <link rel="icon" href ="355d997e558a5ec2dbd3472959608fd2 1.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container" >
+        <a href="index.html" class="logo">
+          <img class = "icon" src="355d997e558a5ec2dbd3472959608fd2 1.svg" alt="icon">
+          <span>Coffee House</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Coffee Menu</a></li>
+          <li><a href="food.html" class="active">Food Menu</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+         <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Food Menu Section -->
+  <section class="food-menu" id="food">
+    <div class="container">
+      <div class="section-header animate-fade-in">
+        <h1>Food & Pastries</h1>
+        <p>Freshly baked daily to complement your drink</p>
+        <a href="menu.html" class="btn-secondary">View Coffee Menu</a>
+      </div>
+      
+      <div class="food-categories">
+        <div class="food-category animate-slide-up" style="animation-delay: 0.1s;">
+          <div class="category-header">
+            <i class="fas fa-bread-slice"></i>
+            <h3>Pastries & Baked Goods</h3>
+          </div>
+          <div class="food-items">
+            <div class="food-item">
+              <h4>Croissant <span class="food-price">180</span></h4>
+              <p>Buttery, flaky French pastry</p>
+            </div>
+            <div class="food-item">
+              <h4>Chocolate Croissant <span class="food-price">220</span></h4>
+              <p>Croissant filled with rich chocolate</p>
+            </div>
+            <div class="food-item">
+              <h4>Blueberry Muffin <span class="food-price">200</span></h4>
+              <p>Moist muffin with fresh blueberries</p>
+            </div>
+            <div class="food-item">
+              <h4>Cinnamon Roll <span class="food-price">240</span></h4>
+              <p>Soft roll with cinnamon and icing</p>
+            </div>
+            <div class="food-item">
+              <h4>Banana Bread <span class="food-price">210</span></h4>
+              <p>Homestyle moist banana bread</p>
+            </div>
+            <div class="food-item">
+              <h4>Almond Danish <span class="food-price">250</span></h4>
+              <p>Flaky pastry with almond filling</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="food-category animate-slide-up" style="animation-delay: 0.2s;">
+          <div class="category-header">
+            <i class="fas fa-sandwich"></i>
+            <h3>Sandwiches & Savories</h3>
+          </div>
+          <div class="food-items">
+            <div class="food-item">
+              <h4>Turkey & Avocado Sandwich <span class="food-price">420</span></h4>
+              <p>On multigrain bread with lettuce, tomato</p>
+            </div>
+            <div class="food-item">
+              <h4>Caprese Panini <span class="food-price">380</span></h4>
+              <p>Mozzarella, tomato, basil on ciabatta</p>
+            </div>
+            <div class="food-item">
+              <h4>Ham & Cheese Croissant <span class="food-price">320</span></h4>
+              <p>Warm croissant with ham and Swiss cheese</p>
+            </div>
+            <div class="food-item">
+              <h4>Veggie Wrap <span class="food-price">350</span></h4>
+              <p>Fresh vegetables with hummus in tortilla</p>
+            </div>
+            <div class="food-item">
+              <h4>Chicken Salad Sandwich <span class="food-price">400</span></h4>
+              <p>Homemade chicken salad on rye</p>
+            </div>
+            <div class="food-item">
+              <h4>Grilled Cheese <span class="food-price">280</span></h4>
+              <p>Classic with cheddar and mozzarella</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="food-category animate-slide-up" style="animation-delay: 0.3s;">
+          <div class="category-header">
+            <i class="fas fa-cookie"></i>
+            <h3>Desserts & Sweets</h3>
+          </div>
+          <div class="food-items">
+            <div class="food-item">
+              <h4>New York Cheesecake <span class="food-price">320</span></h4>
+              <p>Classic creamy cheesecake</p>
+            </div>
+            <div class="food-item">
+              <h4>Chocolate Brownie <span class="food-price">240</span></h4>
+              <p>Rich, fudgy chocolate brownie</p>
+            </div>
+            <div class="food-item">
+              <h4>Tiramisu <span class="food-price">350</span></h4>
+              <p>Italian coffee-flavored dessert</p>
+            </div>
+            <div class="food-item">
+              <h4>Carrot Cake <span class="food-price">300</span></h4>
+              <p>Moist cake with cream cheese frosting</p>
+            </div>
+            <div class="food-item">
+              <h4>Chocolate Chip Cookie <span class="food-price">120</span></h4>
+              <p>Freshly baked, warm and chewy</p>
+            </div>
+            <div class="food-item">
+              <h4>Fruit Tart <span class="food-price">280</span></h4>
+              <p>Pastry cream with seasonal fruits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee House</span>
+          </a>
+          <p>Brewing happiness, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Coffee Menu</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Mon-Fri:</span> 7am - 9pm</li>
+            <li><span>Sat-Sun:</span> 8am - 10pm</li>
+            <li><span>Holidays:</span> 9am - 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Coffee House. All rights reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

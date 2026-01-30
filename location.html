@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location - Coffee House</title>
+  <link rel="icon" href ="355d997e558a5ec2dbd3472959608fd2 1.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img class = "icon" src="355d997e558a5ec2dbd3472959608fd2 1.svg" alt="icon">
+          <span>Coffee House</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Coffee Menu</a></li>
+          <li><a href="food.html">Food Menu</a></li>
+          <li><a href="location.html" class="active">Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Location Section -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header animate-fade-in">
+        <h1>Visit Us</h1>
+        <p>Find your perfect spot to relax and enjoy</p>
+      </div>
+      <div class="location-content">
+        <div class="location-info animate-slide-left">
+          <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+          <p><strong>Address:</strong> 123 Coffee Street, Brew District, City 10001</p>
+          <p><strong>Hours:</strong> Monday-Friday: 7am-9pm | Saturday-Sunday: 8am-10pm</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Email:</strong> info@coffeehouse.com</p>
+          <div class="location-features">
+            <div class="feature">
+              <i class="fas fa-wifi"></i>
+              <span>Free Wi-Fi</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-plug"></i>
+              <span>Power Outlets</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-paw"></i>
+              <span>Pet Friendly</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-parking"></i>
+              <span>Parking Available</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+        <div class="location-map animate-slide-right">
+          <div class="map-placeholder">
+            <i class="fas fa-map"></i>
+            <p>Interactive Map Here</p>
+            <small>123 Coffee Street, Brew District</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Coffee House</span>
+          </a>
+          <p>Brewing happiness, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Coffee Menu</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><span>Mon-Fri:</span> 7am - 9pm</li>
+            <li><span>Sat-Sun:</span> 8am - 10pm</li>
+            <li><span>Holidays:</span> 9am - 6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Coffee House. All rights reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
